@@ -4,5 +4,6 @@
 <br/> Thank you 
 <br/>
 <br/>
-=== bug ======
-ketika edit data, jangan diubah ID nya , karena bisa 404
+=== bug ====== <br/>
+
+ketika edit data, jangan diubah ID nya , karena masih error
