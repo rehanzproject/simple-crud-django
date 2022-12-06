@@ -11,11 +11,12 @@ def tampil(request):
     return render(request, "index.html" , ctx)
 
 def addTabel(request):
+    id = request.POST['txtId']
     namaa = request.POST['txtNama']
     kelass = request.POST['txtKelas']
     matkull = request.POST['txtMtkul']
 
-    addData = Tabel.objects.create(nama=namaa, kelas=kelass, matkul=matkull)
+    addData = Tabel.objects.create(id=id, nama=namaa, kelas=kelass, matkul=matkull)
     return redirect('/')
 
 def deleteTbl(request, id):
@@ -36,9 +37,9 @@ def editTabel(request ):
     namaa = request.POST['txtNama']
     kelass = request.POST['txtKelas']
     matkull = request.POST['txtMtkul']
+    
 
     Tabell = Tabel.objects.get(id=id)
-    Tabell.id = id
     Tabell.nama = namaa
     Tabell.kelas = kelass
     Tabell.matkul = matkull

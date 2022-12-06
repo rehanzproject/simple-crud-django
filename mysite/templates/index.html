@@ -5,7 +5,11 @@
             <h2>Tambah Form</h2>
             <div class="card">
                 <div class="card-body">
-                    <form action="/addTbl/" method="POST"> {% csrf_token %}
+                    <form action="/addTbl/" method="POST">
+                         {% csrf_token %}
+                         <div class="form-group">
+                            <input type="text" name="txtId" id="txtId" class="form-control" placeholder="ID" maxlength="3" required>
+                        </div>
                         <div class="form-group">
                             <input type="text" name="txtNama" id="txtNama" class="form-control" placeholder="Nama" maxlength="20" required>
                         </div>
@@ -30,8 +34,8 @@
         <table class="table table-striped table-hover">
            
             <thead class="table table-dark">
-            <tr>
-        <td>Id</td>
+    <tr>
+    <td>Id</td>
     <td>Nama</td>
     <td>Kelas</td>
     <td>Matkul</td>
