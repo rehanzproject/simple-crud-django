@@ -3,6 +3,4 @@
 `py manage.py runserver`<br/> Thank you 
 <br/>
 <br/>
-=== BUG === <br/>
-
-ketika edit data, jangan diubah ID nya , karena masih error
+Bug has been fixed
